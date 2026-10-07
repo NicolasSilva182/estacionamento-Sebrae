@@ -1,0 +1,15 @@
+package br.gov.sp.etc.estacionamento.service;
+
+import br.gov.sp.etc.estacionamento.entity.VeiculoEntity;
+import br.gov.sp.etc.estacionamento.model.Veiculo;
+
+import java.util.List;
+
+public interface VeiculoService {
+    public void cadastroVeiculo(Veiculo veiculo);
+    public List<VeiculoEntity> listaVeiculo();
+    public boolean deletarVeiculo(Long id);
+    public VeiculoEntity atualizarVeiculo(VeiculoEntity veiculo);
+    public VeiculoEntity buscaVeiculoPorId(Long id);
+
+}
